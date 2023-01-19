@@ -1,20 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        int on_the_account = 50;
-        int deposit_amount = 1150;
-        int number_of_bonuses = deposit_amount / 100;
-        int in_total = deposit_amount + on_the_account + number_of_bonuses;
-        int in_total_without_bonus = on_the_account + deposit_amount;
+        int onTheAccount = 50;
+        int depositAmount = 1001;
+        int numberOfBonuses = depositAmount / 100;
+        int inTotal = depositAmount + onTheAccount + numberOfBonuses;
+        int inTotalWithoutBonus = onTheAccount + depositAmount;
 
-        if (deposit_amount >= 1000) {
+        if (depositAmount > 1000) {
 
-            System.out.println("Сумма бонуса равна: " + number_of_bonuses);
+            System.out.println("Сумма бонуса равна: " + numberOfBonuses);
 
-            System.out.println("Итоговый баланс: " + in_total);
+            System.out.println("Итоговый баланс: " + inTotal);
         }
-        if (deposit_amount < 1000) {
-            System.out.println("Итоговый баланс: " + in_total_without_bonus);
+
+        else if (depositAmount <= 1000)                          {
+            System.out.println("Итоговый баланс: " + inTotalWithoutBonus);
         }
     }
 }
