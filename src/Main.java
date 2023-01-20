@@ -12,9 +12,8 @@ public class Main {
             System.out.println("Сумма бонуса равна: " + numberOfBonuses);
 
             System.out.println("Итоговый баланс: " + inTotal);
-        }
-
-        else if (depositAmount <= 1000)                          {
+        } else {
+            depositAmount = 1000;
             System.out.println("Итоговый баланс: " + inTotalWithoutBonus);
         }
     }
